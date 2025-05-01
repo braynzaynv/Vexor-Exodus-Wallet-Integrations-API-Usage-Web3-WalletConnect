@@ -1,0 +1,2 @@
+D:\GithubNew\3\exodus6\exodus6\Vexor-Exodus-Wallet\Form11\obj\Debug\Form1.csproj.AssemblyReference.cache
+D:\GithubNew\3\exodus6\exodus6\Vexor-Exodus-Wallet\Form11\obj\Debug\Form1.csproj.CoreCompileInputs.cache
