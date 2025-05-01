@@ -1,0 +1,217 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Dosis|Unica+One');
+
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Unica One', cursive;
+}
+
+h1 {
+  font-size: 5em;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+  margin-bottom: .5em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  text-align: right;
+  text-decoration: line-through;
+}
+
+hr {
+  margin: 5em 0 5em 0;
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 1px;
+}
+
+footer {
+  margin-bottom: 1em;
+}
+
+.bio {
+  border: 1px solid #000;
+  padding: 1em;
+  width: 400px;
+}
+
+.columns {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10em;
+}
+
+.columns > div {
+  flex: 1;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.container {
+  background: #567;
+  height: 100vh;
+  width: 100%;
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.image {
+  width: 525px;
+}
+
+.mock-up {
+  width: 500px;
+}
+
+.section {
+  padding: 13em;
+  height: 100vh;
+  width: 100%;
+}
+
+.overlay {
+  position: fixed;
+  border: 1px solid #000;
+  top: 10%;
+  left: 5%;
+  height: 80vh;
+  width: 90%;
+  z-index: 1;
+}
+
+.right,
+.left {
+  padding: 1em;
+}
+
+.social {
+  /*margin: 1.3em .2em;*/
+  width: 2.5em;
+}
+
+/* unvisited link */
+.clickable:link {
+  color: #000;
+  /*text-decoration: line-through;*/
+}
+
+/*visited link */
+.clickable:visited {
+  color: #000;
+}
+
+/* mouse over link */
+.clickable:hover {
+  color: #ED486C;
+}
+
+/* selected link */
+.clickable:active {
+  color: #000;
+}
+
+/* Arrow */
+
+.bounce {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  margin-top: -25px;
+  margin-left: -25px;
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/down-arrow.svg");
+  background-repeat: no-repeat;
+  -webkit-animation:bounce 1s infinite;
+  -moz-animation:bounce 1s infinite;
+  -o-animation:bounce 1s infinite;
+  animation:bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:0px; }
+  50%      { bottom:15px; }
+  100%     {bottom:30;}
+}
+
+@-moz-keyframes bounce {
+  0%       { bottom:0px; }
+  50%      { bottom:15px; }
+  100%     {bottom:30;}
+}
+
+@-o-keyframes bounce {
+  0%       { bottom:0px; }
+  50%      { bottom:15px; }
+  100%     {bottom:30;}
+}
+
+@keyframes bounce {
+  0%       { bottom:0px; }
+  50%      { bottom:15px; }
+  100%     {bottom:30;}
+}
+
+/* Media Queries */
+
+@media only screen
+and (max-width: 1210px) {
+  .columns {
+    flex-wrap: wrap;
+    width: 550px;
+  }
+
+  .section {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen
+and (max-width: 800px) {
+  .container {
+    background: #FFF;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image {
+    width: 450px;
+  }
+
+  .section {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4em;
+  }
+}
